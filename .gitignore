@@ -4,6 +4,7 @@
 hugo.exe
 hugo.linux
 hugo.darwin
+/public
 
 .DS_Store
 node_modules
