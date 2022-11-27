@@ -1,0 +1,66 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+local_backend: true
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Meta Description"
+        name: "description"
+        widget: "string"
+
+      - label: "Robots"
+        name: "robots"
+        widget: "string"
+        hint: "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag#directives"
+        default: "all"
+
+      - label: "Menu"
+        name: "menu"
+        widget: "select"
+        options:
+          - "main"
+          - "footer"
+        required: false
+      
+      - label: "Series"
+        name: "series"
+        widget: "string"
+        required: false
+      
+      - label: "Series Order"
+        name: "series_order"
+        widget: "number"
+        required: false
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Tags"
+        name: "tags"
+        widget: list
+        required: false
+
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
