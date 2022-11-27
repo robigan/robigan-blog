@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: robigan/robigan-blog
   branch: main
 
 media_folder: "static/uploads"
@@ -12,10 +13,10 @@ publish_mode: editorial_workflow
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "content/posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
       - label: "Title"
         name: "title"
         widget: "string"
@@ -24,6 +25,11 @@ collections:
         name: "description"
         widget: "string"
 
+      - label: "Summary"
+        name: "summary"
+        widget: "string"
+        required: false
+
       - label: "Robots"
         name: "robots"
         widget: "string"
@@ -31,6 +37,7 @@ collections:
         default: "all"
 
       - label: "Menu"
+        hint: "When a value is provided, a link to this article will appear in the named menus. Valid values are main or footer."
         name: "menu"
         widget: "select"
         options:
@@ -39,11 +46,13 @@ collections:
         required: false
       
       - label: "Series"
+        hint: "Array of series the article belongs to, we recommend using only one series per article."
         name: "series"
-        widget: "string"
+        widget: "list"
         required: false
       
       - label: "Series Order"
+        hint: "Number of the article within the series."
         name: "series_order"
         widget: "number"
         required: false
@@ -54,13 +63,80 @@ collections:
 
       - label: "Tags"
         name: "tags"
-        widget: list
+        widget: "list"
         required: false
 
       - label: "Draft"
+        hint: "Whether or not this article is considered a rough draft by Hugo."
         name: "draft"
         widget: "boolean"
 
       - label: "Body"
         name: "body"
         widget: "markdown"
+      
+      # - label: "Show Date"
+      #   hint: "Whether or not the article date is displayed. "
+      #   name: "showDate"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Views"
+      #   hint: "Whether or not the article views should be displayed in lists and detailed view."
+      #   name: "showViews"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Likes"
+      #   hint: "Whether or not the article likes should be displayed in lists and detailed view."
+      #   name: "showLikes"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Updated Date"
+      #   hint: "Whether or not the date the article was updated is displayed."
+      #   name: "showDateUpdated"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Pagination"
+      #   hint: "Whether or not the next/previous article links are displayed in the article footer."
+      #   name: "showPagination"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Reading Time"
+      #   hint: ""
+      #   name: "showReadingTime"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Taxonomies"
+      #   hint: "Whether or not the taxonomies that relate to this article are displayed."
+      #   name: "showTaxonomies"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Table of Contents"
+      #   hint: "Whether or not the table of contents is displayed on this article."
+      #   name: "showTableOfContents"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Word Count"
+      #   hint: "Whether or not the article word count is displayed."
+      #   name: "showWordCount"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Show Summary"
+      #   hint: "Whether or not the article summary should be displayed on list pages."
+      #   name: "showSummary"
+      #   widget: "boolean"
+      #   required: false
+
+      # - label: "Add to Sitemap"
+      #   hint: "Whether or not this article is included in the generated /sitemap.xml file."
+      #   name: "xml"
+      #   widget: "boolean"
+      #   required: false
