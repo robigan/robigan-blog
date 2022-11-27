@@ -72,6 +72,7 @@ collections:
         hint: "Whether or not this article is considered a rough draft by Hugo."
         name: "draft"
         widget: "boolean"
+        default: false
 
       - label: "Body"
         name: "body"
