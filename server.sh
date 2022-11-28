@@ -1,4 +1,4 @@
 #! /bin/bash
 
-npx netlify-cms-proxy-server &
+PORT=8081 npx @staticcms/proxy-server &
 hugo server -D
