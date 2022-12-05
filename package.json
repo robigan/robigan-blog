@@ -1,0 +1,12 @@
+{
+    "name": "robigan-blog",
+    "version": "0.1.0",
+    "private": "true",
+    "description": "",
+    "scripts": {
+      "server": "hugo server -D",
+      "dev": "NODE_ENV=development ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
+      "build": "NODE_ENV=production ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit"
+    }
+  }
+  
