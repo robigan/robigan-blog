@@ -8,7 +8,7 @@ tags:
   - tutorial
   - c++
   - vscode
-draft: true
+draft: false
 ---
 {{<lead>}}
 Note: This tutorial is for specific people in my work life. So for the meantime the information in this article will be updated and maintained for as long as those people need it.
@@ -20,6 +20,10 @@ I have created a template on GitHub that contains a whole series of template con
 - C++ Debugging using Apple Clang
 - Dev Containers using Docker (and others) or GitHub Codespaces C++ Clang Debugging [WIP]
 - Remote development using VMs over SSH [WIP]
+
+{{<alert>}}
+Debugging with compiled machine code sometimes needs root (admin) privileges, Visual Studio Code on MacOS always asks for admin even when it is not needed. This can be circumvented by running a Virtual Machine as your own user. For MacOS, a great project that does all of this is [Lima](https://github.com/lima-vm/lima). Setup using Lima will come when this article will be updated for "Remote development using VMs over SSH"
+{{</alert>}}
 
 You can find the template repository on my [GitHub Organization](https://github.com/cs-class-07) or by clicking this [link](https://github.com/cs-class-07/cpp-template-vscode).
 
@@ -70,4 +74,17 @@ GitHub may provide an option when clicking the Code button to open directly in V
 
 ### Enabling the C++ Development Extension
 
-Visual Studio Code has an extension pack
+Visual Studio Code has an extension pack called the [C/C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack), this extension pack has all the necessary Visual Studio Code extensions for developing with C++. If you're using a Dev Container, then the extension pack (along side any other extensions) should already be installed and enabled. If you're not using a Dev Container, you can enable all extensions for the template by searching for the `@recommended` tag in the integrated extensions marketplace, make sure to enable all extensions listed there for the workspace (or globally if you so choose).
+
+![Enabling recommended extensions](/uploads/cpp-tutorial/tutorial4.png)
+
+## Launching and Debugging - VSCode Launch Configurations
+The template contains various Launch configurations one can use to initiate debugging/running of their code using different configurations that all act slightly different in some way. You can view the different launch configurations in the `Run and Debug` pane, by selecting the currently active launch configuration's name.
+
+![Launch configurations](/uploads/cpp-tutorial/tutorial5.png)
+
+{{<alert "info">}}
+NB: All launch configurations are by default designed to debug the currently viewed file in the editor.
+{{</alert>}}
+
+Open a C++ file and run the launch configuration that suits your needs to quickly start developing C++ code. Visual Studio Code will handle attaching/debugging the program! Have fun coding!
