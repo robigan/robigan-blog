@@ -47,11 +47,11 @@ collections:
           - "footer"
         required: false
       
-      - label: "Series"
-        hint: "Array of series the article belongs to, we recommend using only one series per article."
-        name: "series"
-        widget: "list"
-        required: false
+      # - label: "Series"
+      #   hint: "Array of series the article belongs to, we recommend using only one series per article."
+      #   name: "series"
+      #   widget: "list"
+      #   required: false
       
       - label: "Series Order"
         hint: "Number of the article within the series."
@@ -63,10 +63,10 @@ collections:
         name: "date"
         widget: "datetime"
 
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        required: false
+      # - label: "Tags"
+      #   name: "tags"
+      #   widget: "list"
+      #   required: false
 
       - label: "Draft"
         hint: "Whether or not this article is considered a rough draft by Hugo."
