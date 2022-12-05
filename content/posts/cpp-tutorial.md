@@ -19,4 +19,4 @@ I have created a template on GitHub that contains a whole series of template con
 - Dev Containers using Docker (and others) or GitHub Codespaces C++ Clang Debugging [WIP]
 - Remote development using VMs over SSH
 
-You can find the template repository on my [GitHub Organization](https://github.com/cs-class-07) or by clicking this [link](https://github.com/cs-class-07/cpp-template-vscode). Using the template is easy, and all it takes is clicking the <span class="bg-green-500">Use this template</span> button
+You can find the template repository on my [GitHub Organization](https://github.com/cs-class-07) or by clicking this [link](https://github.com/cs-class-07/cpp-template-vscode). Using the template is easy, and all it takes is clicking the [<span class="bg-[#2ea043] hover:bg-[#238636] text-[#fff] p-1 rounded-md">&nbsp;&nbsp;Use this template&nbsp;&nbsp;</span>](https://github.com/cs-class-07/cpp-template-vscode/generate) button on the GitHub repository.
