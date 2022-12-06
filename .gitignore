@@ -11,3 +11,4 @@ node_modules
 tmp
 
 /.tina/__generated__
+/static/admin
