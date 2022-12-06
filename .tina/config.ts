@@ -6,7 +6,7 @@ const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 if (process.env.NODE_ENV === "production") {
   if (typeof process.env.TINA_CLIENT_ID !== "string") throw new Error("Missing env variable TINA_CLIENT_ID");
-  if (typeof process.env.TINA_TOKEN !== "string") throw new Error("Missing env variable TINA_CLIENT_ID");
+  if (typeof process.env.TINA_TOKEN !== "string") throw new Error("Missing env variable TINA_CTOKEN");
 }
 
 export default defineConfig({
