@@ -4,10 +4,15 @@ import { defineConfig } from "tinacms";
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
+if (process.env.NODE_ENV === "production") {
+  if (typeof process.env.TINA_CLIENT_ID !== "string") throw new Error("Missing env variable TINA_CLIENT_ID");
+  if (typeof process.env.TINA_TOKEN !== "string") throw new Error("Missing env variable TINA_CLIENT_ID");
+}
+
 export default defineConfig({
   branch,
-  clientId: null,   // Get this from tina.io
-  token: null,      // Get this from tina.io
+  clientId: process.env.TINA_CLIENT_ID ?? null,   // Get this from tina.io
+  token: process.env.TINA_TOKEN ?? null,      // Get this from tina.io
   build: {
     outputFolder: "admin",
     publicFolder: "static",
