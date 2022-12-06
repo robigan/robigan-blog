@@ -79,7 +79,12 @@ Visual Studio Code has an extension pack called the [C/C++ Extension Pack](https
 ![Enabling recommended extensions](/uploads/cpp-tutorial/tutorial4.png)
 
 ## Launching and Debugging - VSCode Launch Configurations
-The template contains various Launch configurations one can use to initiate debugging/running of their code using different configurations that all act slightly different in some way. You can view the different launch configurations in the `Run and Debug` pane, by selecting the currently active launch configuration's name.
+
+The template contains various Launch configurations one can use to initiate debugging/running of their code using different configurations that all act slightly different in some way. 
+
+### Choosing your appropriate launch configuration
+
+You can view the different launch configurations in the `Run and Debug` pane, by selecting the currently active launch configuration's name.
 
 ![Launch configurations](/uploads/cpp-tutorial/tutorial5.png)
 
@@ -87,4 +92,10 @@ The template contains various Launch configurations one can use to initiate debu
 NB: All launch configurations are by default designed to debug the currently viewed file in the editor.
 {{</alert>}}
 
-Open a C++ file and run the launch configuration that suits your needs to quickly start developing C++ code. Visual Studio Code will handle attaching/debugging the program! Have fun coding!
+Open a C++ file and run the launch configuration that suits your needs to quickly start developing C++ code. Visual Studio Code will handle attaching/debugging the program. When viewing a C/C++ file in the editor, you can also choose to debug or run (One uses the debugger, the other doesn't) by clicking or selecting one of the dropdowns from the run icons in the top right of the editor
+
+![Run & Debug File Alternative](/uploads/cpp-tutorial/tutorial6.png)
+
+### Debugging
+
+The default debugger capabilities of Visual Studio Code are quite simple, and it's mostly the same across languages
