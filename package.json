@@ -13,6 +13,7 @@
     "tailwind:dev": "NODE_ENV=production ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
     "tailwind:build": "NODE_ENV=development ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit",
     "dev": "run-p *:dev",
+    "blog:dev": "run-p hugo:dev tailwind:dev",
     "build": "run-p *:build"
   },
   "dependencies": {
