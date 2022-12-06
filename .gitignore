@@ -9,3 +9,5 @@ hugo.darwin
 .DS_Store
 node_modules
 tmp
+
+/.tina/__generated__
