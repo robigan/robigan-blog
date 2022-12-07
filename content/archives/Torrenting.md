@@ -24,7 +24,7 @@ draft: false
 ## Setup
 
 Tracking Website
-^
+&#x20;     ^
 Prowlarr \<-> Sonarr/Radarr \<-> Transmission
-V
-Jellyfin/RAID-1 Array
+&#x20;                              V
+&#x20;                  Jellyfin/RAID-1 Array
