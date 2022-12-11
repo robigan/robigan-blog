@@ -13,21 +13,35 @@ draft: false
 
 ## Words and Definitions
 
-**Seeding** - The process of having a file, and sharing to other people
-**Leeching** - Downloading a file from other peers
+- **Seeding** - The process of having a file, and sharing to other people
+- **Leeching** - Downloading a file from other peers
 
 ## Links & Resources
 
-[Piracy Subreddit](https://reddit.com/r/piracy "")
-[Trackers Subreddit](https://www.reddit.com/r/trackers/ "")
-[TRaSH's Guides](https://trash-guides.info/ "") - Guides on setting up automated torrenting systems
+- [Piracy Subreddit](https://reddit.com/r/piracy "")
+- [Trackers Subreddit](https://www.reddit.com/r/trackers/ "")
+- [TRaSH's Guides](https://trash-guides.info/ "") - Guides on setting up automated torrenting systems
 
 ## Setup
 
-Tracking Website
-&#x20;     ^
-Prowlarr \<-> Sonarr/Radarr \<-> Transmission
-&#x20;                              V
-&#x20;                  Jellyfin/RAID-1 Array\
-\
+{{<mermaid>}}
+%%{ init: { 'flowchart': { 'curve': 'bump' } } }%%
+flowchart LR;
+subgraph proxy [Proxy network]
+rproxy[Traefik Proxy] --> torrenting
+
+subgraph torrenting [Grabbing system]
+indexer[Prowlarr] <---> grabbers[Sonarr/Radarr]
+grabbers --> downloader[Transmission]
+indexer --> trackers[Tracking Websites]
+grabbers --> storage[(RAID-1 Array)]
+viewers[Jellyfin] --> storage
+end
+
+end
+
+style proxy fill:#FEF9C3
+style torrenting fill:#FCA5A5
+{{</mermaid>}}
+
 The whole setup is all defined in a docker compose definition with dependency on an existing \`proxy\` network and a traefik container monitoring docker
