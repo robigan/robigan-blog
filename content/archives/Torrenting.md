@@ -3,6 +3,7 @@ title: Torrenting
 description: List of resources related to the world of torrenting
 robots: all
 date: '2022-12-06T23:00:00.000Z'
+lastmod: '2022-12-10T23:00:00.000Z'
 tags:
   - torrenting
   - guides
@@ -27,4 +28,6 @@ Tracking Website
 &#x20;     ^
 Prowlarr \<-> Sonarr/Radarr \<-> Transmission
 &#x20;                              V
-&#x20;                  Jellyfin/RAID-1 Array
+&#x20;                  Jellyfin/RAID-1 Array\
+\
+The whole setup is all defined in a docker compose definition with dependency on an existing \`proxy\` network and a traefik container monitoring docker
