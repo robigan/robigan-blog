@@ -7,7 +7,7 @@
     "hugo:dev": "hugo server -D",
     "hugo:server": "hugo server",
     "hugo:build": "hugo",
-    "tina:dev": "tinacms dev",
+    "tina:dev": "NODE_ENV=development tinacms dev",
     "tina:server": "tinacms server:start",
     "tina:build": "tinacms build",
     "tailwind:dev": "NODE_ENV=production ./themes/blowfish/node_modules/tailwindcss/lib/cli.js -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
@@ -17,8 +17,8 @@
     "build": "run-p *:build"
   },
   "dependencies": {
-    "@tinacms/cli": "^1.0.2",
-    "tinacms": "^1.0.2"
+    "@tinacms/cli": "^1.0.6",
+    "tinacms": "^1.1.3"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5"

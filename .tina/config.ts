@@ -105,6 +105,24 @@ const baseArticleField: SchemaField[] = [
     name: "body",
     label: "Body",
     isBody: true,
+    templates: [
+      {
+        name: 'mermaid',
+        label: 'Mermaid.js',
+        match: {
+          start: '{{<',
+          end: '>}}',
+        },
+        fields: [
+          {
+            name: "children",
+            type: "string",
+            label: "Mermaid.js Code",
+            
+          }
+        ]
+      },
+    ],
   },
   {
     type: "boolean",
