@@ -23,7 +23,7 @@ draft: false
 
 ## Setup
 
-{{<mermaid>}}
+{{< mermaid >}}
 %%{ init: { 'flowchart': { 'curve': 'bump' } } }%%
 flowchart LR;
 subgraph proxy [Proxy network]
@@ -41,7 +41,7 @@ end
 
 style proxy fill:#FEF9C3
 style torrenting fill:#FCA5A5
-{{</mermaid>}}
+{{< /mermaid >}}
 
 The whole setup is all defined in a docker compose definition with dependency on an existing \`proxy\` network and a traefik container monitoring docker.
 
