@@ -8,6 +8,7 @@ tags:
   - tutorial
   - c++
   - vscode
+  - coding
 draft: false
 ---
 {{<lead>}}
