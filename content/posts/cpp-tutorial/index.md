@@ -11,9 +11,9 @@ tags:
   - coding
 draft: false
 ---
-{{<lead>}}
+{{< lead >}}
 Note: This tutorial is for specific people in my work life. So for the meantime the information in this article will be updated and maintained for as long as those people need it.
-{{</lead>}}
+{{< /lead >}}
 
 ## Quickly bootstrapping a project using a GitHub template
 
@@ -22,9 +22,9 @@ I have created a template on GitHub that contains a whole series of template con
 - Dev Containers using Docker (and others) or GitHub Codespaces C++ Clang Debugging [WIP]
 - Remote development using VMs over SSH [WIP]
 
-{{<alert>}}
+{{< alert >}}
 Debugging with compiled machine code sometimes needs root (admin) privileges, Visual Studio Code on MacOS always asks for admin even when it is not needed. This can be circumvented by running a Virtual Machine as your own user. For MacOS, a great project that does all of this is [Lima](https://github.com/lima-vm/lima). Setup using Lima will come when this article will be updated for "Remote development using VMs over SSH"
-{{</alert>}}
+{{< /alert >}}
 
 You can find the template repository on my [GitHub Organization](https://github.com/cs-class-07) or by clicking this [link](https://github.com/cs-class-07/cpp-template-vscode).
 
@@ -32,26 +32,26 @@ You can find the template repository on my [GitHub Organization](https://github.
 
 Using the template is easy, and all it takes is clicking the [<span class="bg-[#2ea043] hover:bg-[#238636] text-[#fff] p-1 rounded-md">&nbsp;&nbsp;Use this template&nbsp;&nbsp;</span>](https://github.com/cs-class-07/cpp-template-vscode/generate) button on the GitHub repository.
 
-{{<alert>}}
+{{< alert >}}
 If you have access to GitHub Codespaces, a popup will appear asking if you want to create a new repository using the template or if you want to open it in GitHub Codespaces. For this tutorial, select "Create a new repository"
-{{</alert>}}
+{{< /alert >}}
 
 ![Initiating the new repository process](/uploads/cpp-tutorial/tutorial1.png)
 ![Choosing the Create new repository option](/uploads/cpp-tutorial/tutorial2.png)
 
 Upon clicking the Create a new repository button or after having clicked the use this template button, you'll be taken to a dialogue asking for where you want to create the new repository, the name you want to give it, the description and if you want to make it public or private.
 
-{{<alert "check">}}
+{{< alert "check" >}}
 For name, you can use whatever. My general rule of thumb is to name the repository after the school work, e.g. "Lab 6".
-{{</alert>}}
+{{< /alert >}}
 &ZeroWidthSpace;
-{{<alert "check">}}
+{{< alert "check" >}}
 For description, you can leave it blank but you can fill it out to indicate what the repository does.
-{{</alert>}}
+{{< /alert >}}
 &ZeroWidthSpace;
-{{<alert "check">}}
+{{< alert "check" >}}
 For privacy, I'll generally choose "Private" until my school work's due date is done, such that other students cannot copy what I have done.
-{{</alert>}}
+{{< /alert >}}
 
 Once you have filled out the necessary options, the <span class="bg-[#2ea043] text-[#fff] p-1 rounded-md">&nbsp;&nbsp;Create repository from template&nbsp;&nbsp;</span> button will light up and clicking it will create a new repository for you.
 
@@ -59,9 +59,9 @@ Once you have filled out the necessary options, the <span class="bg-[#2ea043] te
 
 ### Cloning the repository
 
-{{<alert>}}
+{{< alert >}}
 If you plan on using GitHub Codespaces, skip this section, and go to the codespaces section of this article. (Coming Soon)
-{{</alert>}}
+{{< /alert >}}
 
 Right now the new repository exists on the cloud, on GitHub's servers. We now have to clone (or in other words, download) the repository to our computer so we can develop C++ code locally.
 
@@ -69,9 +69,9 @@ Cloning is a very simple process, but is not part of the scope of this tutorial.
 - Clone the repository
 - Open the newly created project folder using Visual Studio Code
 
-{{<alert>}}
+{{< alert >}}
 GitHub may provide an option when clicking the Code button to open directly in Visual Studio Code using a link. Or if you're logged into your GitHub account in Visual Studio Code, you can use the command palette (Ctrl + Shift + P) to clone the repository from Visual Studio Code using the **Git: Clone** command
-{{</alert>}}
+{{< /alert >}}
 
 ### Enabling the C++ Development Extension
 
@@ -89,9 +89,9 @@ You can view the different launch configurations in the `Run and Debug` pane, by
 
 ![Launch configurations](/uploads/cpp-tutorial/tutorial5.png)
 
-{{<alert "info">}}
+{{< alert "info" >}}
 NB: All launch configurations are by default designed to debug the currently viewed file in the editor.
-{{</alert>}}
+{{< /alert >}}
 
 Open a C++ file and run the launch configuration that suits your needs to quickly start developing C++ code. Visual Studio Code will handle attaching/debugging the program. When viewing a C/C++ file in the editor, you can also choose to debug or run (One uses the debugger, the other doesn't) by clicking or selecting one of the dropdowns from the run icons in the top right of the editor.
 
@@ -111,9 +111,9 @@ At the bottom of the `Run and Debug` pane, there's a section called breakpoints.
 
 ## Further Readings
 
-{{<alert>}}
+{{< alert >}}
 This section is an extra section. It's meant to satisfy your curiosities as to why the template contains the files it contains. **This is absolutely not a necessary section to read. Read this section if you're truly curious.**
-{{</alert>}}
+{{< /alert >}}
 
 ### Curiosities about the template C++ file
 
@@ -143,9 +143,9 @@ Ok so what's a namespace? Since programming languages allow us to code various t
 
 The `using namespace std;` line is included, as you'll generally deal with the functions in the std namespace.
 
-{{<alert "check">}}
+{{< alert "check" >}}
 The word `std` is actually short for `standard`!
-{{</alert>}}
+{{< /alert >}}
 
 #### The main function
 
