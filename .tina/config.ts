@@ -31,7 +31,16 @@ export default defineConfig({
         label: "Posts",
         path: "content/posts",
         fields: baseArticleField,
-        format: "md"
+        format: "md",
+        ui: {
+          defaultItem: () => {
+            return {
+              title: `New Post ${(new Date()).toLocaleDateString()}`,
+              description: "Lorem Ipsum Dolor",
+              date: new Date().toISOString(),
+            }
+          }
+        }
       },
       {
         name: "archive",
@@ -42,7 +51,7 @@ export default defineConfig({
         ui: {
           defaultItem: () => {
             return {
-              title: `New Post ${(new Date()).toLocaleDateString()}`,
+              title: `New Archive ${(new Date()).toLocaleDateString()}`,
               description: "Lorem Ipsum Dolor",
               date: new Date().toISOString(),
             }
