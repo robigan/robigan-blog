@@ -215,7 +215,56 @@ const richTextTemplates: RichTextField['templates'] = [
             {
                 name: "tag",
                 type: "string",
-                label: "Tag"
+                label: "Tag",
+                description: "`html` tag that will be used to render the strings"
+            },
+            {
+                name: "classList",
+                type: "string",
+                label: "CSS Classes",
+                description: "List of `css` classes to apply to the `html` element"
+            },
+            {
+                name: "initialString",
+                type: "string",
+                label: "Initial String",
+                description: "Initial string that will appear written and will be replaced"
+            },
+            {
+                name: "speed",
+                type: "number",
+                label: "Speed",
+                description: "Typing speed, measured in milliseconds between each step"
+            },
+            {
+                name: "startDelay",
+                type: "number",
+                label: "Start Delay",
+                description: "The amount of time before the plugin begins typing after being initialized"
+            },
+            {
+                name: "lifeLike",
+                type: "boolean",
+                label: "Life Like",
+                description: "Makes the typing pace irregular, as if a real person is doing it"
+            },
+            {
+                name: "breakLines",
+                type: "boolean",
+                label: "Break Lines",
+                description: "Whether multiple strings are printed on top of each other (true), or if they're deleted and replaced by each other (false)"
+            },
+            {
+                name: "waitUntilVisible",
+                type: "boolean",
+                label: "Wait Until Visible",
+                description: "Determines if the instance will begin when loaded or only when the target element becomes visible in the viewport. The default is `true`"
+            },
+            {
+                name: "loop",
+                type: "boolean",
+                label: "Loop",
+                description: "Whether your strings will continuously loop after completing"
             },
             {
                 name: "children",
