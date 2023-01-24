@@ -6,7 +6,7 @@ description: >-
 summary: >-
   An opinion article on why I think ChatGPT (and articial intelligence in
   general) is beneficial to the future of classical education.
-draft: true
+draft: false
 date: '2023-01-22T23:00:00.000Z'
 tags:
   - opinion
@@ -14,6 +14,7 @@ tags:
   - chatgpt
   - artificial intelligence
   - blog
+lastmod: '2023-01-23T23:00:00.000Z'
 ---
 
 ## Introduction
@@ -53,3 +54,20 @@ Teaching our new generation how to think such that they have the intrinsic will 
 ## What does this mean for AI if it constantly evolves?
 
 Artificial Intelligence is constantly evolving, it's constantly learning from what you give it. ChatGPT at the time of writing can write at the level of a high school student, and not too many days ago, it [wrote a job interview and made the top candidates list](https://www.businessinsider.com/chatgpt-written-application-got-shortlisted-for-interview-recruiters-2023-1). So it won't be long until it starts writing at the same level a university student does, which by that point the issue won't only be in High/Middle Schools (or Primary School if you're smart enough), but also at a university level. Disrupting the educational field even more.
+
+## Alternatives to ChatGPT
+
+Another AI which I've put my hands on is the Chat AI feature by [You](https://you.com/) which includes a nice useful feature for generating texts which are cited by sources that are found on the internet.
+
+## Final thoughts
+
+Everyone over the past couple years since Covid-19 started have been trigger-happy about decentralization, NFTs, metaverse, and AI.&#x20;
+
+* Decentralization is honestly overhyped.&#x20;
+* NFTs are absolute bullshit in my opinion, they're just alternate ways of buying art.&#x20;
+* The metaverse is a cool topic, but if it isn't built the right way by the right people ([See this article](https://www.oilshell.org/blog/2022/02/diagrams.html)) then it may as well go to shit.&#x20;
+* Artificial Intelligence is rapidly advancing and is what I believe will be the first to make a change in the world, followed by the first infrastructure built and setup to be used in everyday life geared at the metaverse (change of behavioral responses to metaverse eye-wear, jobs that will start paying in an asset that'll go directly to the metaverse ecosystem, etc.)
+
+The current industrial revolution that we're going through is the quickest evolving one we've seen, thanks to technology supercharging its development speed. Unfortunately, there are people out there who are building empires in the form of companies and shaping our futures with no regard for privacy or security and decades or even century old systems are falling behind (for example, governments aren't able to keep up with making legislations which look out for the common man).
+
+All I hope for is that people will wake up one day and start worrying about more pressing issues like AI or global warming (in an appropriate manner, no turn off your lights and recycle bullshit) instead of doing nothing and only listening to the echo chamber.
