@@ -42,3 +42,14 @@ ChatGPT sometimes wrote incorrect answers, for example, it gave the dates for th
 As of this moment, I can't log into ChatGPT with a browser. Though I can use it with the macOS Menu Bar application, I cannot access my previous chats.
 {{< /alert >}}
 
+## What if we didn't need to repress ChatGPT?
+
+In current educational institutions, ChatGPT has been disrupting the system by being able to write extensive segments of text which mimic the language of a high school student. Gaining the student who submitted the ChatGPT written work a high mark for little to no effort. This has prompted educators to detect for ChatGPT written work to prevent students from gaining high marks with little effort. Which is a large effort for the educators and all other staff to try to block it.
+
+This is where I would like to propose an alternate idea on how we should educate that ChatGPT in its current state cannot disrupt. That would be that instead of having educational institutions trying to teach students random information and try to get them to cram that information in. Why not teach the new generation the basics, teach them the thinking patterns required for learning such that they can learn for themselves, and let them learn the rest. Rather, teachers shouldn't dictate what a student learns, but should rather guide them to learn what they want to learn.
+
+Teaching our new generation how to think such that they have the intrinsic will to learn on their own allows them to make full use of an artificial intelligence's powers and educate themselves from it. This avoids the whole issue of mindlessly typing in information to meet a deadline and not benefitting any knowledge from it because they want to learn.
+
+## What does this mean for AI if it constantly evolves?
+
+Artificial Intelligence is constantly evolving, it's constantly learning from what you give it. ChatGPT at the time of writing can write at the level of a high school student, and not too many days ago, it [wrote a job interview and made the top candidates list](https://www.businessinsider.com/chatgpt-written-application-got-shortlisted-for-interview-recruiters-2023-1). So it won't be long until it starts writing at the same level a university student does, which by that point the issue won't only be in High/Middle Schools (or Primary School if you're smart enough), but also at a university level. Disrupting the educational field even more.
