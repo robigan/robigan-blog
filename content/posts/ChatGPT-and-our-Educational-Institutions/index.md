@@ -30,9 +30,13 @@ Remember that when calculators were first made commercially viable for everyone,
 
 Before I answer the above statements I posed, I'll share what my experience as a high-school student has been like with ChatGPT and other artificial intelligences so that you may understand where I am coming from, my reader.
 
-I have had access to GPT-3 and the OpenAI API playground back in April 2021 when after having waited for more than 6mo since I had put my application in I received beta access. At the time, my exams were coming close, and I had decided to try using GPT-3 to produce some work for me. It took some tweaking with the prompt and the various variables that you could change to get a different response, but it more or less had worked, and I was satisfied with it.&#x20;
+When ChatGPT was released and educators talked about banning ChatGPT, it got me curious about what legitimate use cases did ChatGPT have as a student. So I started using it in early January on a few assignments, and I was pretty surprised with the results. Among my first few use cases was generating opening sentences for my essays by asking it to briefly answer the assignment's requirements and then writing my own response.&#x20;
 
-Skipping to this January, when ChatGPT was released and educators talked about banning ChatGPT, it got me curious about what legitimate use cases did ChatGPT have as a student. So I started using it in early January on a few assignments, and I was pretty surprised, among my first few use cases was generating opening sentences for my essays by asking it to briefly answer the assignment's requirements. I realized that with the answers it produced, ChatGPT had the potential to be used as a search engine after having used it on one or two essays. Which is what I pivoted using the tool as.
+I realized that with the answers it produced, ChatGPT had the potential to be used as a search engine after having used it on one or two essays. Which is what I pivoted to using the tool as. A few examples included asking it what scientists have contributed to the theory of gravity and what kind of chemicals I would need for a chemical reaction to happen. In both cases, I used the responses it gave to search for an article or website I could use to further read on the assignment and validate what ChatGPT wrote was correct. I wrote down the information it gave and the information I found using external sources in my own words.
+
+{{< alert "circle-info" >}}
+ChatGPT sometimes wrote incorrect answers, for example, it gave the dates for the wrong event. That is why I make sure to double-check the answers it gives with external sources.
+{{< /alert >}}
 
 {{< alert  >}}
 As of this moment, I can't log into ChatGPT with a browser. Though I can use it with the macOS Menu Bar application, I cannot access my previous chats.
