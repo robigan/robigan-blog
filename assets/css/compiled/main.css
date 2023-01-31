@@ -1538,6 +1538,10 @@ select {
   opacity: 0;
 }
 
+.datepicker-cell.current .datepicker-cell-content {
+  border: 1px solid #000;
+}
+
 .timepicker-current.active {
   opacity: 1;
 }
