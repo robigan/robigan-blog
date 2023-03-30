@@ -32,13 +32,11 @@ export default defineConfig({
         path: "content/posts",
         fields: baseArticleField,
         format: "md",
-        ui: {
-          defaultItem: () => {
-            return {
-              title: `New Post ${(new Date()).toLocaleDateString()}`,
-              description: "Lorem Ipsum Dolor",
-              date: new Date().toISOString(),
-            }
+        defaultItem: () => {
+          return {
+            title: `New Post ${(new Date()).toLocaleDateString()}`,
+            description: "Lorem Ipsum Dolor",
+            date: new Date().toISOString(),
           }
         }
       },
@@ -48,13 +46,11 @@ export default defineConfig({
         path: "content/archives",
         fields: baseArticleField,
         format: "md",
-        ui: {
-          defaultItem: () => {
-            return {
-              title: `New Archive ${(new Date()).toLocaleDateString()}`,
-              description: "Lorem Ipsum Dolor",
-              date: new Date().toISOString(),
-            }
+        defaultItem: () => {
+          return {
+            title: `New Post ${(new Date()).toLocaleDateString()}`,
+            description: "Lorem Ipsum Dolor",
+            date: new Date().toISOString(),
           }
         }
       }
