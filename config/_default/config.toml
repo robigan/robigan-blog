@@ -15,11 +15,6 @@ buildFuture = false
 
 # googleAnalytics = "G-XXXXXXXXX"
 
-enableGitInfo = true
-
-[frontmatter]
-  lastmod = ["lastmod", ":git", "date", "publishDate"]
-
 [taxonomies]
   tag = "tags"
   category = "categories"
