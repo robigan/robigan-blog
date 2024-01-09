@@ -5,7 +5,7 @@ description: >-
   and Diploma Programme. My notes, observations, tips and tricks about my
   experience with the IB.
 summary: >-
-  Notes, observations, tips and tricks regarding  the International
+  Notes, observations, tips and tricks regarding the International
   Baccalaureate system in my experience
 date: '2023-03-30T12:39:35.017Z'
 tags:
