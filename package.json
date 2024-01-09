@@ -18,10 +18,11 @@
     "build": "run-p *:build"
   },
   "dependencies": {
-    "@tinacms/cli": "^1.5.1",
-    "tinacms": "^1.4.2"
+    "@tinacms/cli": "^1.5.39",
+    "tinacms": "^1.5.28"
   },
   "devDependencies": {
+    "@types/node": "^20.10.8",
     "npm-run-all": "^4.1.5"
   }
 }
